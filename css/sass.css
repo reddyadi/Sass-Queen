@@ -6,6 +6,16 @@
 body {
   background-color: #EC7E44; }
 
+header {
+  background-color: #e65f17; }
+  header nav ul {
+    list-style: none; }
+    header nav ul li {
+      display: inline-block;
+      color: #D2EC44;
+      padding: 1em;
+      text-align: center; }
+
 #box1 {
   width: 100px;
   height: 100px;
@@ -20,16 +30,6 @@ body {
   width: 100px;
   height: 100px;
   background-color: #44CDEC; }
-
-header {
-  background-color: #e65f17; }
-  header nav ul {
-    list-style: none; }
-    header nav ul li {
-      display: inline-block;
-      color: #D2EC44;
-      padding: 1em;
-      text-align: center; }
 
 main::after {
   clear: both;

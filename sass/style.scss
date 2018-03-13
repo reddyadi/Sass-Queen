@@ -1,4 +1,5 @@
 @import "base_folder/base";
+@import"base_folder/header";
 $width: 100px;
 
 p{
@@ -29,8 +30,6 @@ div{
   @include boxSize;
   background-color: #44CDEC;
 }
-
-@import"base_folder/header";
 
 main::after{
   clear: both;
