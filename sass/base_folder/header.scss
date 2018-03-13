@@ -1,0 +1,14 @@
+header{
+    background-color: darken($primaryColour, 10%);
+    nav{
+        ul{
+          list-style: none;
+          li{
+              display: inline-block;
+              color: #D2EC44;
+              padding: 1em;
+              text-align: center;
+          }
+        }
+    } //selects nav in the header tag
+}

@@ -1,14 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
 body {
-  background-color: #EEF72D; }
+  background-color: #EC7E44; }
 
 #box1 {
-  width: 100vw;
+  width: 100px;
   height: 100px;
   background-color: #9CF9F2; }
 
 #box2 {
-  width: 50vw;
+  width: 100px;
   height: 100px;
   background-color: #B0F99C; }
+
+#box3 {
+  width: 100px;
+  height: 100px;
+  background-color: #44CDEC; }
+
+header {
+  background-color: #e65f17; }
+  header nav ul {
+    list-style: none; }
+    header nav ul li {
+      display: inline-block;
+      color: #D2EC44;
+      padding: 1em;
+      text-align: center; }
+
+main::after {
+  clear: both;
+  content: "";
+  display: table; }
+
+footer {
+  background-color: #f19e72; }
+  footer nav ul {
+    list-style: none;
+    text-align: right; }
+    footer nav ul li {
+      display: inline-block;
+      color: #e65f17;
+      padding: 1em;
+      text-align: right; }
+
+h1 {
+  color: #44b2ec; }
+
+#box1 {
+  width: 100px; }
+
+#box2 {
+  width: 200px; }
+
+#box3 {
+  width: 300px; }
 
 /*# sourceMappingURL=sass.css.map */

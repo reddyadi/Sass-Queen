@@ -1,11 +1,5 @@
-$primaryColour: #EEF72D;
-$width: 100vw;
-
-
-
-body{
-  background-color: $primaryColour;
-}
+@import "base_folder/base";
+$width: 100px;
 
 p{
   //color: white;
@@ -15,14 +9,63 @@ div{
   //color: blue;
 }
 
+@mixin boxSize{
+    width: $width;
+    height: 100px;
+    //float: left;
+}
+
 #box1{
-  width: $width;
-  height: 100px;
-  background-color: #9CF9F2;
+    @include boxSize;
+    background-color: #9CF9F2;
 }
 
 #box2{
-  width: $width / 2;
-  height: 100px;
-  background-color: #B0F99C;
+    @include boxSize;
+    background-color: #B0F99C;
 }
+
+#box3{
+  @include boxSize;
+  background-color: #44CDEC;
+}
+
+@import"base_folder/header";
+
+main::after{
+  clear: both;
+  content: "";
+  display: table;
+}
+
+footer{
+  background-color: lighten($primaryColour, 10%);
+  nav{
+      ul{
+          list-style: none;
+          text-align: right;
+          li{
+              display:inline-block;
+              color: darken($primaryColour, 10%);
+              padding: 1em;
+              text-align: right;
+          }
+      }
+
+  }
+}
+
+
+h1{
+  color: complement($primaryColour);
+}
+
+$boxCount : 3;
+@for $i from 1 through $boxCount{
+    #box#{$i}{
+      width: $width * $i;
+    }
+}
+
+
+//end
