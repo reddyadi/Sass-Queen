@@ -1,0 +1,14 @@
+body {
+  background-color: #EEF72D; }
+
+#box1 {
+  width: 100vw;
+  height: 100px;
+  background-color: #9CF9F2; }
+
+#box2 {
+  width: 50vw;
+  height: 100px;
+  background-color: #B0F99C; }
+
+/*# sourceMappingURL=sass.css.map */
